@@ -1,0 +1,24 @@
+/* components/Navigation.module.css */
+
+.nav {
+    background-color: #00796b; /* Adjust background color */
+    padding: 10px;
+  }
+  
+  .navList {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .navList li a {
+    color: white; /* Link color */
+    text-decoration: none; /* No underline */
+    padding: 8px 16px; /* Padding for clickable area */
+  }
+  
+  .navList li a:hover {
+    background-color: #004d40; /* Darker shade on hover */
+    border-radius: 5px; /* Rounded corners on hover */
+  }
+  
