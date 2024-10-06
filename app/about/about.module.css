@@ -1,40 +1,64 @@
 /* app/about/about.module.css */
 
 .aboutContainer {
+    background-image: url('/about-page-background.png'); /* Adjust the path to the background image */
+    background-size: cover; /* Ensures the background image covers the entire container */
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    
     padding: 40px;
-    max-width: 1200px;
-    margin: 0 auto;
+    width: 100vw; /* Ensures the container takes the full width of the viewport */
+    margin: 0; /* Removes any automatic margins */
     font-family: Arial, sans-serif;
-  }
+    height: 100vh; /* Ensures the container takes the full height of the viewport */
+    position: relative; /* Needed for absolute positioning of the button */
+}
   
-  .header {
+.header {
     text-align: center;
     margin-bottom: 30px;
-  }
-  
-  .header h1 {
+}
+
+.backButton {
+    position: absolute; /* Absolute positioning */
+    top: 20px; /* Distance from the top */
+    left: 20px; /* Distance from the left */
+    background-color: #00796b; /* Button background color */
+    color: white; /* Button text color */
+    border: none; /* Remove default border */
+    padding: 10px 20px; /* Button padding */
+    font-size: 1rem; /* Font size */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s; /* Transition effect */
+}
+
+.backButton:hover {
+    background-color: #005f4f; /* Darker shade on hover */
+}
+
+.header h1 {
     font-size: 3rem;
     color: #00796b;
-  }
+}
   
-  .header p {
+.header p {
     font-size: 1.2rem;
-    color: #666;
-  }
+    color: white;
+}
   
-  .section {
+.section {
     margin-bottom: 50px;
-  }
+}
   
-  .section h2 {
+.section h2 {
     font-size: 2.5rem;
     color: #00796b;
     margin-bottom: 10px;
-  }
+}
   
-  .section p {
+.section p {
     font-size: 1.1rem;
-    color: #333;
+    color: white;
     line-height: 1.6;
-  }
-  
+}

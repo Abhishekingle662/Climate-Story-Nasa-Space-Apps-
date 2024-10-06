@@ -26,7 +26,7 @@
   background-color: transparent; /* Fully transparent background */
   border-radius: 10px;
   margin-top: 20px; /* Space below the top */
-  margin-left: 90px; /* Move content to the right */
+  margin-left: 30px; /* Move content to the right */
 }
 
 @media (prefers-color-scheme: dark) {

@@ -8,7 +8,17 @@
   .navList {
     list-style: none;
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start; /* Aligns items to the start (left) */
+    margin: 0; /* Adjusts left margin to move buttons left */
+    padding: 0px; /* Add left padding */
+  }
+  
+  .navList li {
+    margin-right: 20px; /* Adds space between links */
+  }
+  
+  .navList li:last-child {
+    margin-right: 0; /* No margin on the last item */
   }
   
   .navList li a {

@@ -6,6 +6,11 @@ export default function About() {
   return (
     <div className={styles.aboutContainer}>
       <header className={styles.header}>
+        {/* Back to Home button */}
+        <Link href="/">
+          <button className={styles.backButton}>Back to Home!</button>
+        </Link>
+
         <h1>About Us</h1>
         <p>We are committed to providing insights into climate change through innovative technology.</p>
       </header>
@@ -31,10 +36,6 @@ export default function About() {
         </p>
       </section>
 
-      {/* Back to Home button */}
-      <Link href="/">
-        <button className={styles.backButton}>Go Back to Home!</button>
-      </Link>
     </div>
   );
 }
