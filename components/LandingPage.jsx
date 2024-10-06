@@ -2,7 +2,7 @@
 
 const LandingPage = () => {
     return (
-        <div style={{ backgroundColor: 'black', padding: '20px', color: 'white', fontFamily: 'Arial, sans-serif' }}>
+        <div style={{ backgroundColor: 'rgba(0, 0, 0, 0.7)', padding: '20px', color: 'white', fontFamily: 'Arial, sans-serif' }}>
             <header style={{ textAlign: 'center', marginBottom: '20px' }}>
                 <h1 style={{ color: '#00796b' }}>Climate Story: NASA Space Apps Challenge</h1>
                 <p style={{ fontSize: '1.2em' }}>

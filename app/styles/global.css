@@ -1,0 +1,11 @@
+/* app/styles/global.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('/background.png'); /* Ensure image path is correct */
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-position: center -20px; /* Move the image to the top center */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    height: 100vh; /* Ensures it takes up the full height of the viewport */
+}
