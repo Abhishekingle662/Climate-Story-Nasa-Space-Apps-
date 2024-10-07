@@ -1,5 +1,4 @@
 # backend.py (Flask Backend)
-
 from flask import Flask, jsonify, request
 from flask_cors import CORS
 import datetime as dt
@@ -9,15 +8,18 @@ from geopy.exc import GeocoderTimedOut, GeocoderUnavailable
 from timezonefinder import TimezoneFinder
 import pytz
 import logging
+from dotenv import load_dotenv
+import os
 
 # Configure logging
 logging.basicConfig(level=logging.DEBUG)
 
 app = Flask(__name__)
-CORS(app)
+CORS(app, resources={r"/*": {"origins": "https://climate-story-nasa-space-apps.vercel.app/"}})
 
-username = 'ingle_abhishek'
-password = 'Jb1oZRp1f8'
+username = os.getenv.getenv('METEOMATICS_USERNAME')
+password = os.getenv.getenv('METEOMATICS_PASSWORD')
+
 
 cities = {
     'Bloomington': (39.165325, -86.52638569999999),
@@ -153,5 +155,7 @@ def get_weather():
         'timezone': timezone_str
     })
 
+
+
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=False)  # Set debug to False for production
