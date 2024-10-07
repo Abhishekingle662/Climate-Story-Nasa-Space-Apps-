@@ -20,11 +20,6 @@ CORS(app, resources={r"/*": {"origins": "https://climate-story-nasa-space-apps.v
 username = os.getenv.getenv('METEOMATICS_USERNAME')
 password = os.getenv.getenv('METEOMATICS_PASSWORD')
 
-<<<<<<< HEAD:backend/backend.py
-=======
-username = os.getenv.getenv('METEOMATICS_USERNAME')
-password = os.getenv.getenv('METEOMATICS_PASSWORD')
->>>>>>> a3bed934baf9e6af25134fc6a45dbdd2531919f2:backend.py
 
 cities = {
     'Bloomington': (39.165325, -86.52638569999999),
@@ -163,8 +158,6 @@ def get_weather():
 
 
 if __name__ == '__main__':
-<<<<<<< HEAD:backend/backend.py
     app.run(debug=False)  # Set debug to False for production
-=======
-    app.run(debug=True)
->>>>>>> a3bed934baf9e6af25134fc6a45dbdd2531919f2:backend.py
+
+ 
