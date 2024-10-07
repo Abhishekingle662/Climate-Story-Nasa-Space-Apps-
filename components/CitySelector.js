@@ -15,7 +15,7 @@ const CitySelector = ({ onCityChange }) => {
   useEffect(() => {
     const fetchCities = async () => {
       try {
-        const response = await fetch('http://127.0.0.1:5000/cities');
+        const response = await fetch('https://climate-story-backend-1.onrender.com/cities');
         if (!response.ok) {
           throw new Error('Failed to fetch predefined cities');
         }
@@ -40,7 +40,7 @@ const CitySelector = ({ onCityChange }) => {
       setIsSearching(true);
       setSearchError(null);
       try {
-        const response = await fetch(`http://127.0.0.1:5000/search?q=${encodeURIComponent(searchQuery)}`);
+        const response = await fetch(`https://climate-story-backend-1.onrender.com/search?q=${encodeURIComponent(searchQuery)}`);
         if (!response.ok) {
           if (response.status === 404) {
             setSearchResults([]);

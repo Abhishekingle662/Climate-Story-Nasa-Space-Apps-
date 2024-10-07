@@ -18,7 +18,7 @@ const LandingPage = () => {
     setLoading(true);
     setError(null);
     try {
-      let url = 'http://127.0.0.1:5000/weather?';
+      let url = 'https://climate-story-backend-1.onrender.com/weather?';
       if (city.name && !city.lat && !city.lon) {
         url += `city=${encodeURIComponent(city.name)}`;
       } else if (city.lat && city.lon) {
