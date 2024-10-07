@@ -16,8 +16,8 @@ logging.basicConfig(level=logging.DEBUG)
 app = Flask(__name__)
 CORS(app)
 
-username = 'ingle_abhishek'
-password = 'Jb1oZRp1f8'
+username = os.getenv.getenv('METEOMATICS_USERNAME')
+password = os.getenv.getenv('METEOMATICS_PASSWORD')
 
 cities = {
     'Bloomington': (39.165325, -86.52638569999999),
