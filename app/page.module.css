@@ -12,8 +12,8 @@
   min-height: 100vh; /* Full viewport height */
   padding: 20px; /* General padding */
   font-family: var(--font-geist-sans);
-
-  background-image: url('/background.png');
+/* 
+  background-image: url('/background.png'); */
   background-size: cover;
   background-position: center -170px;
   background-repeat: no-repeat;
